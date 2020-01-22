@@ -3,7 +3,10 @@
     <header>
         <title>Jack Miller's portfolio</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     </header>
     <body>
         <div class="container">
@@ -14,7 +17,7 @@
                             <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="#newstitles">News</a>
+                            <a href="#news">News</a>
                         </li>
                         <li>
                              <a href="#projects">Projects</a>
@@ -22,68 +25,79 @@
                      </ul>
                 </nav>
             </div>
-            <br><br><br>
+            <br><br>
+            <h1 class="animated bounceIn delay-2s slow">About Jack Miller</h1>
             <section id="about" class="row">
-                <h2 class="col-2">About</h2>
-                <div class = "col-9">
-                <p>
-                    <em>Junior studying political science and computer science at Boston's College.</em><br>
-                    The best way to contact him is through millafq at bc.edu<br><br>
-                    <a href="https://bcheights.com/author/jack-miller-2021/" target="_blank">Author profile</a> | 
-                    <a href="https://twitter.com/millerjack_" target="_blank">Twitter</a> | 
-                    <a href="https://www.linkedin.com/in/jack-miller-a3522b158/" target="_blank">LinkedIn</a>
-                    <br><br><strong>Personal Bio</strong><br>
+                <div class = "col-4">
+                <p class="animated bounceInLeft delay-2s">
+                    <strong>Personal Bio</strong><br>
                     I was born in Washington, D.C., and lived nearby until I was 8, when my family moved
                     to South Jersey, where we still live. <br><br>At BC, I work for <em>The Heights</em>, the independent student
                     newspaper. I used to be the news editor, and I more recently have taken a position as a senior staff writer.
                     <br><br> My interests include U.S. politics, journalism, and elections.
                 </p>
                 </div>
-                <div class = "col-2"></div>
-                <div class="col-3">
-                    <img class="pic" src="assets/picture.JPG" alt= width="100%">
-                </div>
-            </section>
-            <br><br><br>
-            <section id="newstitles" class="row">
-                <h2 class="col-2">News</h2>
-                <div class="col-4">
-                    <strong>Working for the writing center</strong><br><em>Jan. 16, 2020</em>
-                </div>
-                <div class="col-1"></div>
-                <div class="col-4">
-                    <strong> Making the move to senior staff</strong><br><em>Jan. 13, 2020</em>
-                </div>
-                <div class="col-1"></div>
-                <div class="col-4">
-                    <strong>A new semester begins!</strong><br><em>Jan. 13, 2020</em>
-                </div>
-            </section>
-            <section id="newstext" class="row">
                 <div class="col-2"></div>
-                <div class="col-4">
-                    I'm looking foward to be helping students develop their writing skills, especially at BC, where writing is so emphasized.
-                </div>
-                <div class="col-1"></div>
-                <div class="col-4">
-                    I have worked at <em>The Heights</em> as an editor since my second semester as a freshmen, when I joined as the associate investigative editor. 
-                    In that role, I managed some lower-level weekly duties, such as maintining some social media accounts and doing some basic administrative tasks, in addition to long-term investigative or special projects. 
-                </div>
-                <div class="col-1"></div>
-                <div class="col-4">
-                    I am taking several computer science classes this semester, including Data Science, Web Application Development, and Prinicples of Programming Languages. 
-                    I am looking foward to tackling more advanced topics now that I am done the major's required courses such as Computer Systems. 
-                    In addition to those classes, I am finishing up my political science degree this semester.
+                <div class="col-6" style="text-align: center;">
+                    <img class="animated bounceInLeft delay-2s " class="profpic" src="assets/picture.jpg" style="width: 450px; height: 450px;"><br>
+                    <p class="animated bounceInRight delay-2s slow" style="display: inline-block;">
+                        <em>Studying political science and computer science at Boston's College.</em><br>
+                        <i class="fal fa-user-edit"></i> <a href="https://bcheights.com/author/jack-miller-2021/" target="_blank"></i>Author profile</a> | 
+                        <i class="fab fa-twitter"></i> <a href="https://twitter.com/millerjack_" target="_blank">Twitter</a> | 
+                        <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/jack-miller-a3522b158/" target="_blank"></i>LinkedIn</a> |
+                        <i class="fas fa-at"></i> millafq at bc dot edu
+                    </p>
                 </div>
             </section>
             <br><br><br>
+            <h1>News</h1>
+            <section id="news">
+                <div class="row">
+                    <div class="col-3">
+                        <strong>Working for the writing center</strong><br><em>Jan. 16, 2020</em>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-8">
+                        <p class="longText">
+                            I'm looking foward to be helping students develop their writing skills, especially at BC, where writing is so emphasized.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-3">
+                        <strong> Making the move to senior staff</strong><br><em>Jan. 13, 2020</em>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-8">
+                        <p class="longText">
+                            I have worked at <em>The Heights</em> as an editor since my second semester as a freshmen, when I joined as the associate investigative editor. 
+                            I am now stepping back as a senior staff writer.
+                        </p>
+                     </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-3">
+                        <strong>A new semester begins!</strong><br><em>Jan. 13, 2020</em>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-8">
+                        <p class="longText">
+                            I am taking several computer science classes this semester, including Data Science, Web Application Development, and Prinicples of Programming Languages. 
+                            I am looking foward to tackling more advanced topics. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <br><br><br>
+            <h1>Projects</h1>
             <section id="projects">
-                <h2>Projects</h2>
                 <div class="row">
                     
                     <div class="col-6"><!--Proj 1 info-->
                         <br><strong>Web Application Development portfolio</strong><br>
-                        <img class="pic" src="assets/portfolio_ss.png" width="65%"><br><br>
+                        <img class="pic" src="assets/portfolio_ss.png" style="width: 200px; height: 200px;"><br><br>
                     </div>
                     <div class="col-6"><!--Proj 1 teaser-->
                         <br><br>
@@ -93,7 +107,7 @@
                 <div class="row">
                     <div class="col-6"><!--Proj 2 info-->
                         <br><strong>Tracking vulnerable members of Congress</strong><br>
-                        <img class="pic" src="assets/DJ2.png" width="33%"><br><br>
+                        <img class="pic" src="assets/DJ2.png" style="width: 200px; height: 200px;"><br><br>
                     </div>
                     <div class="col-6"><!--Proj 2 teaser-->
                         <br><br>
@@ -104,7 +118,7 @@
                 <div class="row">
                     <div class="col-6"><!--Proj 3 info-->
                         <br><strong>Computer Organization counter project</strong><br>
-                        <img class="pic" src="assets/counterPic.png" alt= width=10%"><br><br>
+                        <img class="pic" src="assets/counterPic.png" style="width: 200px; height: 200px;"><br><br>
                     </div>
                     <div class="col-6"><!--Proj 3 teaser-->
                         <br><br>

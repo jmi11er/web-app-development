@@ -1,16 +1,16 @@
 .container{max-width: 1024px; width: 100%;}
 
-.nav_flexbox {display: flex; width: 100%; flex-direction: row;top: 0; left: 0; 
-    justify-content: space-evenly; background-color: dodgerblue;}
-nav ul {list-style-type: none; font-size: larger;}
+.row{
+    flex-wrap:wrap;
+    display:flex;
+}
+[class*=col-]{
+    flex-basis: 100%
+}
 
-a:hover{font-size: large;}
-a:visited{color: blue}
-
-.pic{width: 400px; height: 400px; object-fit: cover; border-radius: 15%;}
-
-.row{display: flex; flex-wrap:wrap;}
-.col-1 {flex-basis: 8.33%;} /* width works too */
+@media only screen and (min-width: 768px){
+.row{display: flex; flex-direction: row;}
+.col-1 {flex-basis: 8.33%;}
 .col-2 {flex-basis: 16.66%;}
 .col-3 {flex-basis: 25%;}
 .col-4 {flex-basis: 33.33%;}
@@ -22,3 +22,28 @@ a:visited{color: blue}
 .col-10 {flex-basis: 83.33%;}
 .col-11 {flex-basis: 91.66%;}
 .col-12 {flex-basis: 100%;}
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+body h1 {
+    font-family: 'Overpass', sans-serif;
+}
+
+.nav_flexbox {display: flex; width: 100%; flex-direction: row;top: 0; left: 0; 
+    justify-content: space-evenly; background-color: white;}
+nav ul {list-style-type: none; font-size: larger;}
+
+a {color: maroon}
+
+.profpic {object-fit: cover; border-radius: 15%;}
+img.pic{width: 100%; height: 100%; object-fit: cover;}
+
+.longText{background: lightgray;}
+
+
+footer.tag .projectType{background-color: palevioletred; color: violet}
+footer.tag .subject{background-color: palegreen; color: green}
+footer.tag .other{background-color:lightsteelblue; color: steelblue}
