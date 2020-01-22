@@ -2,18 +2,19 @@
 <html>
     <header>
         <title>Jack Miller's portfolio</title>
+        <link rel="stylesheet" href="styletwo.css" />
     </header>
     <body>
         <div class="container">
-            <nav>
-                <h2>Page navigation</h2>
+            <nav class="nav_flexbox">
                 <ul>
                     <li>
                         <a href="index.html">Go back</a>
                     </li>
             </nav>
-            <section>
-                <h1>HTML Portfolio Project</h1>
+            <h1>HTML Portfolio Project</h1>
+            <section class="row">
+                <div class="col-4">
                 Things to know
                 <ul>
                     <li>
@@ -26,13 +27,19 @@
                         The website, published to GitHub, is the only material in this project, although it contains plenty of pictures and information from other classes' projects.
                     </li>
                 </ul>
-                <img src="assets/portfolio_ss.png" alt= width="50%"><br><br>
-                <br><strong>How it works</strong><br>
+                </div>
+                <div class="col-6">
+                    <img class="pic" src="assets/portfolio_ss.png">
+                </div>
+                <div class="col-4">
+                <strong>How it works</strong><br>
                 I have never used HTMl before, so this process involved some trial and error. I had to make a main page as well as three sub-page with information about projects I have worked on. I also had to implement some personal information, which was honestly a bit of a stretch because I don't have that much interesting happening right now.
                 I was hoping to include videos for some of these projects, but I was unable to get those to embed correctly after multiple attempts. This project also contains a lot of links to sections and other pages, which was useful and suprinsingly simple. Overall, I didn't think HTML would be this easy to pick up.
-                <br> <em>Tags: Computer Science, class project, HTML5, website</em>
+                </div>
             </section>
-            <footer>
+            <footer class="tag">
+                <br>
+                Tags: <em class="projectType">class project</em>, <em class="subject">computer science</em>, <em class="other">programming</em>
                 <br>
                 Copyright © Jack Miller
             </footer>
